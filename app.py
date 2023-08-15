@@ -20,7 +20,7 @@ with rio.open(path) as src:
 clat = (34.7236241463 + 34.7833234084)/2
 clon = (-84.5767920522 + -84.519140314)/2
 
-m = folium.Map(location=[clat, clon], tiles='Stamen Terrain', zoom_start = 10)
+m = folium.Map(location=[clat, clon], tiles='Stamen Terrain', zoom_start = 13)
 folium.raster_layers.ImageOverlay(
     image=img[0],
     name='test',
