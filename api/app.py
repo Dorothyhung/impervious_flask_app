@@ -1,6 +1,9 @@
 from flask import Flask, render_template, url_for
+import folium
+import rasterio as rio
 
 app = Flask(__name__)
+app.config['UPLOAD_EXTENSIONS'] = ['.tif']
 
 @app.route('/')
 def index():
@@ -9,8 +12,6 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 
-import folium
-import rasterio as rio
 
 path = "impervious_rendered.tif"
 # with rio.open(path) as src:
