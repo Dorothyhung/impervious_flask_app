@@ -1,7 +1,7 @@
 {
     "builds":[
         {
-            "src":"app.py",
+            "src":"/api/app.py",
             "use":"@vercel/python"
         }
     ],
@@ -9,7 +9,9 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"/"
+            "dest":"/api/templates/index.html"
         }
-    ]
+    ],
+
+    "framework": "flask"
 }
