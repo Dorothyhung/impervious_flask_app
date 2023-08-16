@@ -9,9 +9,7 @@
     "routes":[
         {
             "src":"/(.*)",
-            "dest":"/api/templates/index.html"
+            "dest":"/api/app.py"
         }
-    ],
-
-    "framework": "flask"
+    ]
 }
