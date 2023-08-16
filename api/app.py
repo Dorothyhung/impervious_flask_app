@@ -9,15 +9,13 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-
 import folium
 import rasterio as rio
 
-# path = "impervious_rendered.tif"
-# with rio.open(path) as src:
-#     boundary = src.bounds
-#     img = src.read()
+path = "impervious_rendered.tif"
+with rio.open(path) as src:
+    boundary = src.bounds
+    img = src.read()
 
 # clat = (34.7236241463 + 34.7833234084)/2
 # clon = (-84.5767920522 + -84.519140314)/2
