@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
 
 import folium
-# import rasterio as rio
+import rasterio as rio
 
 # path = "impervious_rendered.tif"
 # with rio.open(path) as src:
